@@ -1,0 +1,55 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: #f4e2b6;
+  direction: rtl;
+}
+
+#main-menu, #garage {
+  padding-top: 50px;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 18px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.car-model {
+  width: 200px;
+  margin: 20px 0;
+}
+
+canvas {
+  background: url('https://i.imgur.com/Wo9AEtP.jpg') repeat-y;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #444;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  user-select: none;
+}
