@@ -1,0 +1,78 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: #000;
+}
+
+#ui {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.btn {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  pointer-events: auto;
+  font-size: 14px;
+}
+
+#accelerate { right: 20px; bottom: 20px; }
+#brake { right: 20px; bottom: 80px; }
+#cameraBtn { right: 20px; top: 20px; background: transparent; }
+
+#steering {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background: url('assets/steering-wheel.png') no-repeat center;
+  background-size: contain;
+  pointer-events: auto;
+  touch-action: none;
+  transform-origin: center;
+}
+
+#intro-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#intro-screen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  display: none;
+}
